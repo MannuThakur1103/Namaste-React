@@ -1,0 +1,32 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "This is tutorial of Namaste React Series",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MannuThakur1103/Namaste-React.git"
+  },
+  "keywords": [],
+  "author": "Mannu Thakur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MannuThakur1103/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/MannuThakur1103/Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist": [
+    "Last 2 versions"
+  ]
+}

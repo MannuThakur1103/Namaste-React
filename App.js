@@ -1,29 +1,47 @@
-/* <div id="parent">
-    <div id ="child">
-        <h1>I"m a h1 tag</h1>
-        <h2>I'm an h2 tag</h2>
-    </div>
-    <div id ="child2">
-        <h1>I"m a h1 tag</h1>
-        <h2>I'm an h2 tag</h2>
-    </div>
-</div> */
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// React.createElement =>ReactElement- JSObject => HTMLElement(on rendering)
+// const heading = React.createElement(
+//   "h1",
+//   {id: "heading"},
+//   "Namaste React"
+// );
+
+// console.log(heading)
+
+// JSX - HTML like or XML like syntax
+// JSX is transpiled before it reaches the JS Engine  => done by parcel - gives responsibilty to babel package for this
+
+//JSX => Babel transpile it to React.createElement => ReactElement => JS Object => HTML element
+const Title = () => (
+ <h1 className="head" tabIndex={5}>
+    Namaste React using JSX🚀🚀
+  </h1> //This is a react element
+);
+//React component (2 types)
+// 1. Functional component - NEW
+// 2. Class based component - OLD
 
 
-const parent = React.createElement("div",  { id : "parent" },[
-    React.createElement("div", { id : "child" },[
-        React.createElement("h1",{},"I'm an h1 tag"),
-        React.createElement("h2",{},"I'm an h2 tag")
-    ]),
-    React.createElement("div", { id : "child2" },[
-        React.createElement("h1",{},"I'm an h1 tag"),
-        React.createElement("h2",{},"I'm an h2 tag")
-    ])
-]);
+//React Functional Component
+// const HeadingComponent = () => {
+//   return <h1>Namaste React  using Funtional Component🚀</h1>
+// };
 
+//This is component Composition(Component inside component)
+const HeadingComponent = () => (
+  <div id="container">
+    <Title />
+    <h1 className="heading">Namaste React using Functional Component</h1>
+  </div>
+);
+//HeadingComponent and HeadingComponent2 both are same
 
-//JSX
-
-console.log(parent);  //object
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+//root.render(jsxHeading);
+
+root.render(<HeadingComponent />) //This is how we render React Component
+
+
