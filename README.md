@@ -19,3 +19,34 @@
 - Host on HTTPs
 - Tree Shaking - remove unused code
 - Different dev and prod bundles
+
+/*
+*Header
+  -logo
+  -Nav Items
+*Body
+  -Search
+
+  -ReastaurantCard
+    -Restaurant
+      -
+
+*/
+
+Two types of export/import
+
+- default
+- named
+
+- Default export/import
+
+  Syntax:-
+    export default Component;
+    import Component from 'path';
+
+- Named export/import
+Syntax:-
+export const component;
+import { component } from 'path';
+
+-When you have to export multiple things, use named export.
