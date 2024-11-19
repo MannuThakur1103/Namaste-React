@@ -50,3 +50,23 @@ export const component;
 import { component } from 'path';
 
 -When you have to export multiple things, use named export.
+
+
+#React hooks
+- (Normal js utility funtion)
+- Two very imp react hooks :-
+    - useState() - SuperPowerful State Variable in React.
+        - Why it is called state variable ?
+        - Because it is used to maintain the state of the component.
+    - useEffect()
+
+- whenever a state variable updates, React will re-render the components.
+
+- Read about react fiber architecture on acdlite github user.
+
+//VVVVVI:-  whenever state variable update, react triggers a reconciliation cycle(re-renders the components)
+
+//Episode 06
+// Monolith Architecture
+- Single codebase
+
