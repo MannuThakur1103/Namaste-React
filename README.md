@@ -70,3 +70,18 @@ import { component } from 'path';
 // Monolith Architecture
 - Single codebase
 
+//Epiosde 07
+State variable are meant to be created on the higher level inside the functional components
+- Don't ever create state variable inside if, for, func, or  any condition....it'll create inconsistency in our code
+though JS allows us to do this.
+
+//React-Router-Dom
+// Provides {Link} to navigate thru diff pages
+// Never ever use <a></a> for routing to diff pages in React as It'll reload the complete page
+// Instead use <Link to = "path"></Link> for routing
+// It'll just refreshes the component
+// And that's why our app is c/a SPA.(Single Page Application)
+
+// there are two types of routing in react web application
+// 1. Client Side Routing (No network calls happens)
+// 2. Server Side Routing (When any network calls happens while routing the pages)

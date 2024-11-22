@@ -11,6 +11,10 @@ const Body = () => {
 
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
 
+  // whenever state variable update, react triggers a reconciliation cycle(re-renders the components)
+  console.log("Body Rendered");
+
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -23,7 +27,7 @@ const Body = () => {
 
     const json = await data.json();
 
-    console.log(json);
+    //console.log(json);
 
     //Optional Chaining
     setListOfRestaurants(
