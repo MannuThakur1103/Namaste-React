@@ -85,3 +85,9 @@ though JS allows us to do this.
 // there are two types of routing in react web application
 // 1. Client Side Routing (No network calls happens)
 // 2. Server Side Routing (When any network calls happens while routing the pages)
+
+//Episode 08
+// Funtional Components - It's a piece of JS function that returns a piece of JSX.
+// Class Components - It's a piece of JS class which extends React.component and it has a render method that returns a piece of JSX.
+//This React.component is basically a class that is given to us by React.
+//UserClass is inherinting some properties from it.
