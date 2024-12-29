@@ -90,4 +90,5 @@ though JS allows us to do this.
 // Funtional Components - It's a piece of JS function that returns a piece of JSX.
 // Class Components - It's a piece of JS class which extends React.component and it has a render method that returns a piece of JSX.
 //This React.component is basically a class that is given to us by React.
+//The only major difference between class based and function based component is the render method
 //UserClass is inherinting some properties from it.
