@@ -92,3 +92,12 @@ though JS allows us to do this.
 //This React.component is basically a class that is given to us by React.
 //The only major difference between class based and function based component is the render method
 //UserClass is inherinting some properties from it.
+//In class-based component, props is received using the constructor
+
+//EP08 Part 02
+//Earlier, There was no react hooks like useState() and many more. A state is used to created whenever an instance of the class is created.
+//And whenever an instance of the class is created , the constructor is called. And this is the best place to receive props and to create State Variables in class-based components.
+//Never ever update State Variables directly. (this.state.count = this.state.count+1;)
+
+//Episode 08 Part 03
+//
